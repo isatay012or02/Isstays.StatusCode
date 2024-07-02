@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Issatays.StatusCode;
 
-public class ResultCodeService(Context context)
+public class ResultCodeService(Context context) : IResultCodeService
 {
     public MessageByResultCode? GetMessageByResultCode(int code)
     {
